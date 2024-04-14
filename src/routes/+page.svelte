@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Button } from '$lib/components/ui/button';
 	import { Github, Gitlab, Linkedin, Mail, Twitter } from 'lucide-svelte';
 
 	const socials = [
@@ -9,7 +10,7 @@
 	];
 </script>
 
-<div class="prose mx-auto dark:prose-invert">
+<div class="prose dark:prose-invert mx-auto">
 	<h1 class="font-medium">Software developer, and amateur entrepreneur</h1>
 
 	<p class="mt-6">
@@ -22,13 +23,9 @@
 
 	<div class="mt-6 flex gap-4">
 		{#each socials as { label, href, icon }}
-			<a
-				title={label}
-				class="variant-outline-surface text-surface-900-50-token btn flex-1 gap-2 no-underline dark:variant-ghost-surface"
-				{href}
-			>
+			<Button {href} target="_blank" title={label} variant="secondary" class="w-full">
 				<svelte:component this={icon} />
-			</a>
+			</Button>
 		{/each}
 	</div>
 
@@ -38,11 +35,8 @@
 		<hr class="flex-1" />
 	</div>
 
-	<a
-		class="variant-outline-surface text-surface-900-50-token btn w-full gap-2 no-underline dark:variant-ghost-surface"
-		href="https://www.linkedin.com/in/david-plugge/"
-	>
+	<Button href="mailto:info@davidplugge.de" variant="secondary" class="w-full">
 		<Mail />
 		<span>info@davidplugge.de</span>
-	</a>
+	</Button>
 </div>

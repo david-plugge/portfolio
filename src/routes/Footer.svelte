@@ -10,7 +10,7 @@
 			{#each routes as { label, href }}
 				<li>
 					<a
-						class="relative block px-3 py-2 font-medium transition-colors hover:text-primary-500-400-token"
+						class="hover:text-primary-500-400-token relative block px-3 py-2 font-medium transition-colors"
 						{href}
 					>
 						{label}

@@ -2,7 +2,10 @@
 	import '../app.css';
 	import Nav from './Nav.svelte';
 	import Footer from './Footer.svelte';
+	import { ModeWatcher } from 'mode-watcher';
 </script>
+
+<ModeWatcher />
 
 <div class="flex min-h-screen flex-col gap-16">
 	<Nav />

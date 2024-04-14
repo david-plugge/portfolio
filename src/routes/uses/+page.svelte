@@ -1,5 +1,5 @@
-<div class="prose mx-auto dark:prose-invert">
-	<h1 class="font-medium balance">Software, Hardware, and other things i recommend.</h1>
+<div class="prose dark:prose-invert mx-auto">
+	<h1 class="balance font-medium">Software, Hardware, and other things i recommend.</h1>
 
 	<p class="mt-6">
 		I get asked a lot about the things I use to build software, stay productive, or buy to fool
