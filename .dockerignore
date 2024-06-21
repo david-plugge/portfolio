@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+.git
+build/
+dist/
+.svelte-kit/
+.env*
+docker-compose.yml
